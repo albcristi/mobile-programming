@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">City in your pocket</string>
+    <string name="title_activity_create_event">Map</string>
+</resources>
