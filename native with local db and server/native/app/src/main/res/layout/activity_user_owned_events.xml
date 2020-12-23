@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#B1CCEB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_is_logged_activities.user_owned_events.UserOwnedEvents">
+
+    <TextView
+        android:id="@+id/welcomeMsgUserOwnedEventsLayout"
+        android:layout_width="376dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userOwnedEventsRecycleView"
+        android:layout_width="366dp"
+        android:layout_height="487dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMsgUserOwnedEventsLayout"
+        app:layout_constraintVertical_bias="0.123"
+        tools:listitem="@layout/city_list_item" />
+
+    <TextView
+        android:id="@+id/goBackTxtUser"
+        android:layout_width="164dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="Go Back"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userOwnedEventsRecycleView"
+        app:layout_constraintVertical_bias="0.506" />
+</androidx.constraintlayout.widget.ConstraintLayout>

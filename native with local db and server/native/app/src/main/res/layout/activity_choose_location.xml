@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseLocationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1CCEB"
+    tools:context=".user_is_logged_activities.ChooseLocationActivity">
+
+    <TextView
+        android:id="@+id/welcomeMessageUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoMessageChooseLocLayout"
+        android:layout_width="303dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="Just one more thing, enter the city where you want to see events, if we have events there an arrow will appear :)"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessageUser" />
+
+    <EditText
+        android:id="@+id/cityUserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="city"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoMessageChooseLocLayout" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showEventsInTheCity"
+        app:srcCompat="@drawable/ferriswh" />
+
+    <ImageView
+        android:id="@+id/showEventsInTheCity"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityUserInput"
+        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

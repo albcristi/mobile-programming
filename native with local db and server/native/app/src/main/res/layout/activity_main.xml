@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign-in-layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1CCEB"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signInTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="City in your pocket"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signInUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="517dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="user name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInTitleText" />
+
+    <EditText
+        android:id="@+id/signInPasswordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInUserName" />
+
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="#93B8E4"
+        android:fontFamily="@font/roboto_thin"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInPasswordField" />
+
+    <TextView
+        android:id="@+id/singInBecomeAMember"
+        android:layout_width="205dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="Become a member"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInFailed" />
+
+    <TextView
+        android:id="@+id/signInFailed"
+        android:layout_width="162dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInButton" />
+
+    <ImageView
+        android:id="@+id/signInCityImg"
+        android:layout_width="416dp"
+        android:layout_height="398dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logInButton"
+        app:srcCompat="@drawable/img" />
+</androidx.constraintlayout.widget.ConstraintLayout>
